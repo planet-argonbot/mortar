@@ -1,0 +1,408 @@
+/*
+
+Web Application Library
+-------------------------------------------------------------------------------------
+This stylesheet contains interface patterns which are consistent through most web applications
+
+*/
+
+/*------------------------------------------------------------------------
+=horizontal list (basis of most navigation schemes)
+------------------------------------------------------------------------*/
+ul.horizontal {
+  list-style: none;
+  overflow: hidden;
+}
+
+ul.horizontal li {
+  float: left;
+}
+
+ul.horizontal.right {
+  float: right;
+}
+
+body ul.horizontal li.first {
+  margin-left: 0;
+}
+
+/*------------------------------------------------------------------------
+=nav > button nav (REFACTOR)
+------------------------------------------------------------------------*/
+ul.horizontal.button_group li {
+  line-height: 18px;
+}
+
+ul.horizontal.button_group li a {
+  background: #ddd;
+  border: 1px solid #ccc;
+  display: block;
+  font-weight: bold;
+  margin-left: 9px;
+  padding: 0 4px;
+  text-decoration: none;
+}
+
+ul.horizontal.button_group li a.active {
+  background: #333;
+  border: 1px solid #222;
+  color: #fff;
+}
+
+div.button_nav {
+  background: #555;
+  float: left;
+  padding: 5px 10px;
+  width: 920px;
+}
+
+div.button_nav_light {
+  background: #ddd;
+  float: left;
+  padding: 5px 10px;
+  width: 920px;
+}
+
+div.button_nav .label {
+  float: left;
+  font-weight: bold;
+  line-height: 25px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+div.button_nav_light .label {
+  color: #555;
+}
+
+/*------------------------------------------------------------------------
+=nav > dividers
+------------------------------------------------------------------------*/
+ul.horizontal.dividers {
+  margin-bottom: 18px;
+}
+
+ul.horizontal.dividers li {
+  border-left: 1px solid #999;
+}
+
+ul.horizontal.dividers li.first {
+  border: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* space without divider */
+
+ul.horizontal.dividers li.space {
+  border-left: none;
+  margin-left: 0;
+}
+
+/*------------------------------------------------------------------------
+=nav > tabbed
+------------------------------------------------------------------------*/
+ul.horizontal.tabbed {
+  border-bottom: 1px solid #ccc;
+  clear: both;
+  margin-bottom: 18px;
+}
+
+ul.horizontal.tabbed li {
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+}
+
+ul.horizontal.tabbed li a {
+  background: #ddd;
+  border-bottom: none;
+  display: block;
+  margin-right: 2px;
+  padding: 0 9px;
+  text-decoration: none;
+}
+
+ul.horizontal.tabbed li a.active {
+  background: #eee;
+}
+
+/*ul.tabbed li span.inactive {
+  background: #ddd;
+  color: #bbb;
+  display: block;
+  margin-right: 1px;
+  padding: 9px;
+}*/
+
+/*------------------------------------------------------------------------
+=nav > tabbed > bar
+------------------------------------------------------------------------*/
+
+/* Adds background color and spacing to tabbed nav. Use this in conjunction with with tabbed nav */
+
+ul.horizontal.tabbed.bar {
+  background: #aaa;
+  border-bottom: none;
+  padding: 18px 0 0;
+  border-top: 1px solid #eee;
+}
+
+ul.horizontal.tabbed.bar li a {
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+}
+
+ul.horizontal.tabbed.bar li a.active {
+  background: #fff;
+}
+
+/* Use for non-navigation element inline with tabbed nav */
+
+ul.horizontal.tabbed li.non_nav {
+  color: #666;
+  font-weight: normal;
+  padding: 0;
+  text-align: left;
+}
+
+/*------------------------------------------------------------------------
+=pagination (REFACTOR)
+------------------------------------------------------------------------*/
+
+.pagination_wrap {
+  background: #777;
+  color: #fff;
+  position: relative;
+  clear: left;
+  height: 35px;
+}
+
+.pagination_wrap span.record_count {
+  float: none;
+  line-height: 35px;
+  padding-left: 10px;
+}
+
+/* for pagination at the top of a list */
+
+.pagination_wrap.top {
+  margin-bottom: 18px;
+}
+
+/* for pagination at the bottom of a list */
+
+.pagination_wrap.bottom {
+  margin: 9px 0 18px;
+}
+
+/* end */
+  
+.pagination a, 
+.pagination span {
+  background: #fff;
+  display: block;
+  float: left;
+  margin: 9px 4px 9px 0;
+  padding: .2em .5em;
+}
+
+.pagination span.disabled {
+  color: #999;
+}
+  
+.pagination span.current {
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+.pagination a {
+  color: #105cb6;
+  text-decoration: none;
+}
+
+.pagination span.record_count {
+  background: #555;
+  float: left;
+  padding: 0 10px;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+  border-color: #003;
+  color: #003;
+}
+
+.pagination .page_info {
+  background: #2e6ab1;
+  color: #fff;
+  margin-bottom: .3em;
+  padding: .4em .6em;
+  text-align: center;
+  width: 22em;
+}
+
+.pagination .page_info b {
+  background: #6aa6ed;
+  color: #003;
+  padding: .1em .25em;
+}
+
+.pagination:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+* html .pagination {
+  height: 1%;
+}
+
+*:first-child+html .pagination {
+  overflow: hidden;
+}
+
+/*------------------------------------------------------------------------
+=table
+------------------------------------------------------------------------*/
+
+table {
+  border-bottom: 1px solid #999;
+  clear: both;
+  width: 100%;
+  font-family: "Tahoma", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+table tr.even td {
+  background: #eee;
+}
+
+table tr th {
+  font-size: 11px;
+  padding: 4px;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+table tr th[scope="row"] {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+table tr th span {
+  color: #666;
+  display: block;
+}
+
+/*table tr th.header_group {
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+table tr th.subheader {
+}
+
+table tr th.header_group span,
+table tr th.subheader span {
+  display: block;
+  font-weight: bold;
+}
+
+table tr th.header_group span {
+  margin-bottom: 0;
+  height: 46px;
+  margin-top: 9px;
+}
+
+table tr th.subheader span {
+  margin-top: 0;
+  height: 36px;
+  margin-bottom: 9px;
+  padding: 0 4px;
+}
+
+table tr th.subheader a {
+  height: 36px;
+  margin: 0 0 9px;
+  padding-top: 0;
+}
+
+table tr th.subheader p {
+  text-align: center;
+}
+
+*/
+
+table tr th a:hover {
+  text-decoration: underline;
+}
+
+/*table tr th.first {
+  padding-left: 7px;
+}
+
+table tr th.last {
+  padding-right: 7px;
+  background: none;
+}*
+
+table tr th.with_count {
+  padding-left: 35px;
+}*/
+
+/* REFACTOR (BELOW) */
+
+/*table tr th a.asc {
+  background: url(/images/icon-control-up.png) no-repeat right bottom;
+  color: #333;
+  padding-right: 17px;
+  display: block;
+}
+
+table tr th a.desc {
+  background: url(/images/icon-control-down.png) no-repeat right bottom;
+  color: #333;
+  padding-right: 17px;
+  display: block;
+}
+
+table tr th a.sorted_desc {
+  background: url(/images/icon-control-down-active.png) no-repeat right bottom;
+}
+
+table tr th a.sorted_asc {
+  background: url(/images/icon-control-up-active.png) no-repeat right bottom;
+}*/
+
+table tr td.first {
+  border-left: none;
+}
+
+table tr th.actions {
+  background: #666;
+  color: #fff;
+}
+
+table tr td {
+  border-bottom: 1px dotted #aaa;
+  border-left: 1px dotted #aaa;
+  padding: 4px 7px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+table tr.even td.hover {
+  background: #cedeff;
+}
+
+td.hover, 
+tr.hover {
+	background: #cedeff;
+}\
