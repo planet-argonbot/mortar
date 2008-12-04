@@ -1,43 +1,317 @@
-/*======================================
-      WELCOME TO THE STYLESHEET
---------------------------------------      
-     Copyright Mike Crittenden
-      Author: Mike Crittenden
-======================================*/
- 
-/**************************************\
-|------------COLOR SCHEME--------------|
-|--------------------------------------|
-- black		#000
-- white		#fff
-\**************************************/
+/*
+Project:        Project Name
+Last Changed:   YYYY-MM-DD (in textmate, "isoD" + TAB will insert current date)
+                http://planetargon.com
+-------------------------------------------------------------------------------------
+TABLE OF CONTENTS
+             
+1) general styles
+2) helper styles
+3) layout structure
+4) view components
+5) overrides
+
+*/
+
+/*##################################################################################
+=1) general styles
+##################################################################################*/
+
+/* body styles, links headings, other elements, tags go here. */
+
+/*----------------------------------------------------------------------------------
+=body
+----------------------------------------------------------------------------------*/
+body {
+  background: #fff;
+  color: #000;
+}
+
+/*----------------------------------------------------------------------------------
+=links
+----------------------------------------------------------------------------------*/
+
+/*a:focus {
+  outline: 1px dotted invert;
+}*/
+
+a {
+}
+
+a:link {
+}
+
+a:visited {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
+/* =link classes
+--------------------------------------------------------------*/
+a.destroy {
+  color: #f00;
+}
 
 
-/**************************************/
-/*              GLOBALS               */
-/**************************************/
+
+/*----------------------------------------------------------------------------------
+=headings
+----------------------------------------------------------------------------------*/
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
 
 
-/**************************************/
-/*              HEADER                */
-/**************************************/
+/*----------------------------------------------------------------------------------
+=HTML tags
+----------------------------------------------------------------------------------*/
+hr {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0
+}
+
+small {
+}
+
+/*----------------------------------------------------------------------------------
+=utility classes
+----------------------------------------------------------------------------------*/
+
+/* =self-clear floats */
+.group:after {
+	content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+
+
+/*##################################################################################
+=2) helper styles
+##################################################################################*/
+
+/* forms, cosistent items with just one class go here */
+
+
+/*----------------------------------------------------------------------------------
+=form tags
+----------------------------------------------------------------------------------*/
+
+/*fieldset {
+
+}
+
+label {
+
+}
+
+label input {
+  border: 1px solid #ccc;
+  display: block;
+  margin-bottom: 14px;
+  font-size: 16px;
+  padding: 5px 5px 4px 5px;
+  width: 300px;
+}
+
+label span {
+  font-weight: normal;
+}
+
+input[type="hidden"] {
+  border: none;
+}
+
+input[type="checkbox"] {
+  margin: 0 4px 0 0;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+}
+
+label.checkbox input {
+  border: none;
+  display: inline;
+  position: relative;
+}
+
+label.checkbox span {
+  display: block;
+  left: 10px;
+  margin-left: 18px;
+  position: relative;
+  top: -14px;
+}
+  
+textarea {
+  border: 1px solid #ccc;
+  display: block;
+  height: 90px;
+  width: 380px;
+  margin-bottom: 14px;
+  padding: 5px 5px 4px 5px;
+
+}
+*/
+
+/* =form classes
+--------------------------------------------------------------*/
+.form_submit {
+  margin: 0;
+  padding: 10px;
+  clear: both;
+  background: #333;
+}
+
+/*----------------------------------------------------------------------------------
+=flash & notifications
+----------------------------------------------------------------------------------*/
+/*#flash_messages {
+  margin-top: 4px;
+}
+
+#flash_messages p {
+  border-top: none;
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+#flash_messages p a.action {
+  float: right;
+}
+
+#flash_messages p#error {
+  background: #fcc;
+  border: 1px solid #f00;
+}
+
+#flash_messages p#notice {
+  background: #fee37a;
+  border: 1px solid #fd9b5b;
+}
+
+#flash_messages p#message {
+  background: #cbf285;
+  border: 1px solid #3cab09;
+}
+
+#errorExplanation {
+  background: #fcc;
+  border: 1px solid #f00;
+  margin-bottom: 18px;
+  padding: 17px;
+}
+
+span.field_with_errors input[type="text"],
+span.field_with_errors input[type="password"] {
+  background: #fcc;
+  border: 1px solid #f00;
+}
+
+.progress {
+  height: 1000px;
+  text-align: center;
+  margin-top: 36px;
+}
+
+.progress h2.generate {
+  font-size: 24px;
+}
+
+.progress_small {
+  height: 400px;
+  text-align: center;
+  margin-top: 36px;  
+}
+
+.progress_small h2.generate {
+  font-size: 24px;
+}*/
 
 
 
-/**************************************/
-/*             NAVIGATION             */
-/**************************************/
+/*##################################################################################
+=3) layout structure
+##################################################################################*/
+
+/* skeleton and page furniture goes here */
+
+
+/*----------------------------------------------------------------------------------
+=footer
+----------------------------------------------------------------------------------*/
 
 
 
-/**************************************/
-/*            MAIN CONTENT            */
-/**************************************/
+/*##################################################################################
+=4) view components
+##################################################################################*/
+
+/* view components that are used globally go here */
+
+/*----------------------------------------------------------------------------------
+=typography
+----------------------------------------------------------------------------------*/
+
+.extra {
+  float: right;
+}
+
+/* heading spacing */
+
+.zero {/* no bottom margin*/
+  margin-bottom: 0;
+}
+
+.half {/* half of the normal bottom margin */
+  margin-bottom: 9px;
+}
+
+.double {/* double bottom margin */
+  margin-bottom: 36px;
+}
+
+/* for page descrption */
+
+p.desc {
+  color: #666;
+}
+
+/* footnote */
+
+p.footnote {
+  color: #666;
+  font-size: 10px;
+}
 
 
+/*##################################################################################
+=5) overrides
+##################################################################################*/
 
-/**************************************/
-/*               FOOTER               */
-/**************************************/
-
+/* Everything that is is "one-off" will go here. The goal is using this area as a last resort, any patterns or reusable CSS should not go here */
 
