@@ -1,17 +1,15 @@
-===========
-BlueTripCSS
-===========
------------------------------------------------
-A CSS Framework Fusion of Blueprint and Tripoli
------------------------------------------------
+(needs to be updated, more to come)
 
-USAGE
-=====
+# BlueTripCSS
+
+## A CSS Framework Fusion of Blueprint and Tripoli
+
+### USAGE
 
 Add the following four links to the <head> of your page::
 
-   <link rel="stylesheet" href="../css/screen.css" type="text/css" media="screen, projection">
-   <link rel="stylesheet" href="../css/print.css" type="text/css" media="print"> 
+  <link rel="stylesheet" href="../css/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="../css/print.css" type="text/css" media="print"> 
    <!--[if IE]>
      <link rel="stylesheet" href="../css/ie.css" type="text/css" media="screen, projection">
    <![endif]-->
@@ -23,15 +21,13 @@ This ensures that internal links will not show the external link icon.
 
 Now get designing!
 
-INFORMATION
-===========
+### INFORMATION
 
 Visit bluetrip.org_ and read the blog_ for more detailed information and instructions.
 
-.. _bluetrip.org: http://bluetrip.org/
-.. _blog: http://capsizedesigns.com/blog/2008/04/bluetripcss-a-fusion-of-blueprint-and-tripoli
+[bluetrip.org](http://bluetrip.org/)
+[blog](http://capsizedesigns.com/blog/2008/04/bluetripcss-a-fusion-of-blueprint-and-tripoli)
 
-LICENSE
-=======
+### LICENSE
 
 See the LICENSE file.
