@@ -275,12 +275,6 @@ ul.horizontal.tabbed li.non_nav {
   text-decoration: none;
 }
 
-.pagination span.record_count {
-  background: #555;
-  float: left;
-  padding: 0 10px;
-}
-
 .pagination a:hover,
 .pagination a:focus {
   border-color: #003;
@@ -300,22 +294,6 @@ ul.horizontal.tabbed li.non_nav {
   background: #6aa6ed;
   color: #003;
   padding: .1em .25em;
-}
-
-.pagination:after {
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden;
-}
-
-* html .pagination {
-  height: 1%;
-}
-
-*:first-child+html .pagination {
-  overflow: hidden;
 }
 
 /*------------------------------------------------------------------------
@@ -352,86 +330,9 @@ table tr th span {
   display: block;
 }
 
-/*table tr th.header_group {
-  text-align: center;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-
-table tr th.subheader {
-}
-
-table tr th.header_group span,
-table tr th.subheader span {
-  display: block;
-  font-weight: bold;
-}
-
-table tr th.header_group span {
-  margin-bottom: 0;
-  height: 46px;
-  margin-top: 9px;
-}
-
-table tr th.subheader span {
-  margin-top: 0;
-  height: 36px;
-  margin-bottom: 9px;
-  padding: 0 4px;
-}
-
-table tr th.subheader a {
-  height: 36px;
-  margin: 0 0 9px;
-  padding-top: 0;
-}
-
-table tr th.subheader p {
-  text-align: center;
-}
-
-*/
-
 table tr th a:hover {
   text-decoration: underline;
 }
-
-/*table tr th.first {
-  padding-left: 7px;
-}
-
-table tr th.last {
-  padding-right: 7px;
-  background: none;
-}*
-
-table tr th.with_count {
-  padding-left: 35px;
-}*/
-
-/* REFACTOR (BELOW) */
-
-/*table tr th a.asc {
-  background: url(/images/icon-control-up.png) no-repeat right bottom;
-  color: #333;
-  padding-right: 17px;
-  display: block;
-}
-
-table tr th a.desc {
-  background: url(/images/icon-control-down.png) no-repeat right bottom;
-  color: #333;
-  padding-right: 17px;
-  display: block;
-}
-
-table tr th a.sorted_desc {
-  background: url(/images/icon-control-down-active.png) no-repeat right bottom;
-}
-
-table tr th a.sorted_asc {
-  background: url(/images/icon-control-up-active.png) no-repeat right bottom;
-}*/
 
 table tr td.first {
   border-left: none;
@@ -445,7 +346,7 @@ table tr th.actions {
 table tr td {
   border-bottom: 1px dotted #aaa;
   border-left: 1px dotted #aaa;
-  padding: 4px 7px;
+  padding: 4px;
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -459,62 +360,6 @@ tr.hover {
 	background: #cedeff;
 }
 
-/* to create serif italic dramatic text, use this class */
-.fancy {
-  color: #666;
-  font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
-  font-style: italic;
-  font-weight: normal;
-}
-
-/* creates small caps */
-.caps {
-  font-variant: small-caps;
-  letter-spacing: 1px;
-  text-transform: lowercase;
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: 0 2px;
-}
-
-/* TEXT CLASSES */
-
-.container .small {
-  font-size: .8em;
-  margin-bottom: 1.875em;
-  line-height: 1.875em;
-}
-.container .large {
-  font-size: 1.2em;
-  line-height: 2.5em;
-  margin-bottom: 1.25em;
-}
-.container .hide {
-  display: none;
-}
-.container .quiet {
-  color: #666;
-}
-.container .loud {
-  color: #000;
-}
-.container .highlight {
-  background: #ff0;
-}
-.container .top {
-  margin-top: 0;
-  padding-top: 0;
-}
-.container .bottom {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.container .thin {
-  font-weight: lighter;
-}
-.container .center {
-  text-align: center;
-}
 
 /*---------STYLES FOR BUTTONS----------*/
 /* Demo: particletree.com/features/rediscovering_the_button_element */
@@ -532,7 +377,7 @@ tr.hover {
 </a>
 */
 
-.container a.button, .container button {
+a.button, button {
   display: inline-block;
   float: left;
   margin: 0 0.583em 0.667em 0;
@@ -549,12 +394,12 @@ tr.hover {
   color: #565656;
   cursor: pointer;
 }
-.container button {
+button {
   width: auto;
   overflow: visible;
   padding: 4px 10px 3px 7px; /* IE6 */
 }
-.container button[type] {
+button[type] {
   padding: 4px 10px 4px 7px; /* Firefox */
   line-height:17px; /* Safari */
 }
