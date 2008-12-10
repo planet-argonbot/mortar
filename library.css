@@ -108,31 +108,6 @@ a.negative:active, button.negative:active {
   color: #fff;
 }
 
-/*------------------------------------------------------------------------
-=nav > dividers
-------------------------------------------------------------------------*/
-ul.horizontal.dividers {
-  margin-bottom: 18px;
-}
-
-ul.horizontal.dividers li {
-  border-left: 1px solid #999;
-}
-
-ul.horizontal.dividers li.first {
-  border: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-/* space without divider */
-
-ul.horizontal.dividers li.space {
-  border-left: none;
-  margin-left: 0;
-}
-
-
 /*----------------------------------------------------------------------------------
 =flash messages (from blueprint framework) / error messages
 ----------------------------------------------------------------------------------*/
@@ -215,6 +190,32 @@ ul.horizontal.right {
 }
 
 body ul.horizontal li.first {
+  margin-left: 0;
+}
+
+/*------------------------------------------------------------------------
+=nav > dividers
+------------------------------------------------------------------------*/
+ul.horizontal.dividers {
+  margin-bottom: 18px;
+}
+
+ul.horizontal.dividers li {
+  border-left: 1px solid #999;
+  margin-left: .4em;
+  padding-left: .3em;
+}
+
+ul.horizontal.dividers li.first {
+  border: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* space without divider */
+
+ul.horizontal.dividers li.space {
+  border-left: none;
   margin-left: 0;
 }
 
