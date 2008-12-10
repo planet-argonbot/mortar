@@ -8,7 +8,7 @@ This stylesheet contains interface patterns which are consistent through most we
 
 
 /*------------------------------------------------------------------------
-=buttons
+=buttons (from blueprint framework)
 ------------------------------------------------------------------------*/
 /*---------STYLES FOR BUTTONS----------*/
 /* Demo: particletree.com/features/rediscovering_the_button_element */
@@ -134,7 +134,7 @@ ul.horizontal.dividers li.space {
 
 
 /*----------------------------------------------------------------------------------
-=flash messages (via blueprint)
+=flash messages (from blueprint framework) / error messages
 ----------------------------------------------------------------------------------*/
 #flash_message .error, 
 #flash_message .notice, 
@@ -183,6 +183,20 @@ ul.horizontal.dividers li.space {
   margin: 0;
 }
 
+/* form errors */
+
+#errorExplanation {
+  background: #fcc;
+  border: 1px solid #f00;
+  margin-bottom: 18px;
+  padding: 17px;
+}
+
+span.field_with_errors input[type="text"],
+span.field_with_errors input[type="password"] {
+  background: #fcc;
+  border: 1px solid #f00;
+}
 
 /*------------------------------------------------------------------------
 =horizontal list (basis of most navigation schemes)
@@ -275,7 +289,6 @@ ul.horizontal.tabbed li.non_nav {
 /*------------------------------------------------------------------------
 =pagination (REFACTOR)
 ------------------------------------------------------------------------*/
-
 .pagination_wrap {
   background: #777;
   color: #fff;

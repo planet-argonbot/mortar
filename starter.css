@@ -57,30 +57,6 @@ a.destroy {
 }
 
 
-
-/*----------------------------------------------------------------------------------
-=headings
-----------------------------------------------------------------------------------*/
-
-h1 {
-}
-
-h2 {
-}
-
-h3 {
-}
-
-h4 {
-}
-
-h5 {
-}
-
-h6 {
-}
-
-
 /*----------------------------------------------------------------------------------
 =HTML tags
 ----------------------------------------------------------------------------------*/
@@ -120,7 +96,7 @@ small {
 =form tags
 ----------------------------------------------------------------------------------*/
 
-/*fieldset {
+fieldset {
 
 }
 
@@ -174,9 +150,8 @@ textarea {
   width: 380px;
   margin-bottom: 14px;
   padding: 5px 5px 4px 5px;
-
 }
-*/
+
 
 /* =form classes
 --------------------------------------------------------------*/
@@ -187,70 +162,6 @@ textarea {
   background: #333;
 }
 
-/*----------------------------------------------------------------------------------
-=flash & notifications
-----------------------------------------------------------------------------------*/
-/*#flash_messages {
-  margin-top: 4px;
-}
-
-#flash_messages p {
-  border-top: none;
-  margin-bottom: 0;
-  padding: 8px;
-}
-
-#flash_messages p a.action {
-  float: right;
-}
-
-#flash_messages p#error {
-  background: #fcc;
-  border: 1px solid #f00;
-}
-
-#flash_messages p#notice {
-  background: #fee37a;
-  border: 1px solid #fd9b5b;
-}
-
-#flash_messages p#message {
-  background: #cbf285;
-  border: 1px solid #3cab09;
-}
-
-#errorExplanation {
-  background: #fcc;
-  border: 1px solid #f00;
-  margin-bottom: 18px;
-  padding: 17px;
-}
-
-span.field_with_errors input[type="text"],
-span.field_with_errors input[type="password"] {
-  background: #fcc;
-  border: 1px solid #f00;
-}
-
-.progress {
-  height: 1000px;
-  text-align: center;
-  margin-top: 36px;
-}
-
-.progress h2.generate {
-  font-size: 24px;
-}
-
-.progress_small {
-  height: 400px;
-  text-align: center;
-  margin-top: 36px;  
-}
-
-.progress_small h2.generate {
-  font-size: 24px;
-}*/
 
 
 
@@ -276,24 +187,6 @@ span.field_with_errors input[type="password"] {
 /*----------------------------------------------------------------------------------
 =typography
 ----------------------------------------------------------------------------------*/
-
-.extra {
-  float: right;
-}
-
-/* heading spacing */
-
-.zero {/* no bottom margin*/
-  margin-bottom: 0;
-}
-
-.half {/* half of the normal bottom margin */
-  margin-bottom: 9px;
-}
-
-.double {/* double bottom margin */
-  margin-bottom: 36px;
-}
 
 /* for page descrption */
 

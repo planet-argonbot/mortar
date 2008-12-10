@@ -144,3 +144,24 @@ fieldset {
 .center {
   text-align: center;
 }
+
+/*------------------------------------------------------------------------
+=type utility classes
+------------------------------------------------------------------------*/
+.extra {
+  float: right;
+}
+
+/* heading spacing */
+
+.zero {/* no bottom margin*/
+  margin-bottom: 0;
+}
+
+.half {/* half of the normal bottom margin */
+  margin-bottom: 9px;
+}
+
+.double {/* double bottom margin */
+  margin-bottom: 36px;
+}
