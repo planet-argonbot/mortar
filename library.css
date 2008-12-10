@@ -10,41 +10,47 @@ This stylesheet contains interface patterns which are consistent through most we
 /*----------------------------------------------------------------------------------
 =flash messages (via blueprint)
 ----------------------------------------------------------------------------------*/
-.container .error, 
-.container .notice, 
-.container .message {
+#flash_message .error, 
+#flash_message .notice, 
+#flash_message .message {
   padding: .8em;
   margin-bottom: 1.6em;
   border: 2px solid #ddd;
 }
-.container .error {
+
+#flash_message .error {
   background: #fbe3e4;
   color: #8a1f11;
   border-color: #fbc2c4;
 }
-.container .notice {
+
+#flash_message .notice {
   background: #fff6bf;
   color: #514721;
   border-color: #ffd324;
 }
-.container .message {
+
+#flash_message .message {
   background: #e6efc2;
   color: #264409;
   border-color: #c6d880;
 }
-.container .error a {
+
+#flash_message .error a {
   color: #8a1f11;
   background: none;
   padding: 0;
   margin: 0;
 }
-.container .notice a {
+
+#flash_message .notice a {
   color: #514721;
   background: none;
   padding: 0;
   margin: 0;
 }
-.container .message a {
+
+#flash_message .message a {
   color: #264409;
   background: none;
   padding: 0;
