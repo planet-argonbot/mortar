@@ -1,728 +1,491 @@
-/* -----------------------------------------------------------------------
-
-BlueTripCSS Framework
-
-Mike Crittenden
-mike@capsizedesigns.com
-Copyright 2008 Mike Crittenden
-
-License - MIT or GPL (whichever suits you better)
-
------------------------------------------------------------------------ */
-
-/* MEYER RESET v1.0*/
-html,body,div,grid,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent
-}
-body {
-  line-height: 1
-}
-ol,ul {
-  list-style: none
-}
-blockquote,q {
-  quotes: none
-}
-blockquote:before,blockquote:after,q:before,q:after {
-  content: '';
-  content: none
-}
-:focus {
-  outline: 0
-}
-ins {
-  text-decoration: none
-}
-del {
-  text-decoration: line-through
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0
-}
-
-/* BASIC TYPOGRAPHY */
-
-html {
-  font-size: 62.5%;
-  font-family: helvetica, "microsoft sans serif", arial, sans-serif;
-}
-strong, th, thead td, h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-cite, em, dfn {
-  font-style: italic;
-}
-code, kbd, samp, pre, tt, var, input[type='text'], input[type='password'], textarea {
-  font-size: 92%;
-  font-family: monaco, "Lucida Console", courier, monospace;
-}
-del {
-  text-decoration: line-through;
-  color: #666;
-}
-ins, dfn {
-  border-bottom: 1px solid #ccc;
-}
-small, sup, sub {
-  font-size: 85%;
-}
-abbr, acronym {
-  text-transform: uppercase;
-  font-size: 85%;
-  letter-spacing: .1em;
-}
-a abbr, a acronym {
-  border: none;
-}
-abbr[title], acronym[title], dfn[title] {
-  cursor: help;
-  border-bottom: 1px solid #ccc;
-}
-sup {
-  vertical-align: super;
-}
-sub {
-  vertical-align: sub;
-}
-
-/* QUOTES */
-
-blockquote {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  color: #666;
-}
-blockquote *:first-child:before {
-  content: "\201C";
-}
-blockquote *:first-child:after {
-  content: "\201D";
-}
-
-/* FORMS */
-
-fieldset {
-  padding: 1.4em;
-  margin: 0 0 1.5em 0;
-  border: 1px solid #ccc;
-}
-legend {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-label {
-  font-weight: bold;
-}
-textarea, input[type='text'], input[type='password'], select {
-  border: 1px solid #ccc;
-  background: #fff;
-}
-textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover {
-  border-color: #aaa;
-}
-textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus {
-  border-color: #888;
-  outline: 2px solid #ffffaa;
-}
-input, select {
-  cursor: pointer;
-}
-input[type='text'] {
-  cursor: text;
-}
-
-/* BASE SIZES */
-
 /*
-.container {
-  font-size: 1.2em;
-  line-height: 1.6em;
-}
-.container h1 {
-  font-size: 1.9em;
-}
-.container h2 {
-  font-size: 1.7em;
-}
-.container h3 {
-  font-size: 1.5em;
-}
-.container h4 {
-  font-size: 1.3em;
-}
-.container h5 {
-  font-size: 1.2em;
-}
-.container h6 {
-  font-size: 1em;
-}
+	960 Grid System ~ Core CSS.
+	Learn more ~ http://960.gs/
 
+	Licensed under GPL and MIT.
 */
-/* LISTS */
 
-.container ul li {
-  margin-left: .85em;
-}
-/*.container ul li:before {
-  content: "\2022\00a0\00a0";
-}
-REMOVED FOR FF3 */
-.container ol {
-  list-style-position: outside;
-  list-style-type: decimal;
-}
-.container dt {
-  font-weight: bold;
+/* =Containers
+--------------------------------------------------------------------------------*/
+
+.container_12,
+.container_16
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
 }
 
-/* TABLES */
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
 
-.container table {
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-}
-.container th, .container td {
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ccc;
-}
-
-/* MARGINS & PADDINGS */
-
-.container blockquote *:first_child {
-  margin: .8em 0;
-}
-.container hr, .container p, .container ul, .container ol, .container dl, .container pre, .container blockquote, .container address, .container table, .container form {
-  margin-bottom: 1.6em;
-}
-/* NOTE: Calulate header margins: TOP: 1.6em/size, BOTTOM: 1.6em/size/2 
-.container h1 {
-  margin: 1em 0 .5em;
-}
-.container h2 {
-  margin: 1.07em 0 .535em;
-}
-.container h3 {
-  margin: 1.14em 0 .57em;
-}
-.container h4 {
-  margin: 1.23em 0 .615em;
-}
-.container h5 {
-  margin: 1.33em 0 .67em;
-}
-.container h6 {
-  margin: 1.6em 0 .8em;
-}
-*/
-.container th, .container td {
-  padding: .8em;
-}
-.container caption {
-  padding-bottom: .8em;
-}
-/* padding instead of margin for IE */
-.container blockquote {
-  padding: 0 1em;
-  margin: 1.6em 0;
-}
-.container fieldset {
-  padding: 0 1em 1em 1em;
-  margin: 1.6em 0;
-}
-/* padding-top is margin-top for fieldsets in Opera */
-.container legend {
-  padding-left: .8em;
-  padding-right: .8em;
-}
-.container legend+* {
-  margin-top: 1em;
-}
-/* compensates for the opera margin bug */
-.container textarea, .container input {
-  padding: .3em .4em .15em .4em;
-}
-.container select {
-  padding: .1em .2em 0 .2em;
-}
-.container option {
-  padding: 0 .4em;
-}
-.container a {
-  position: relative;
-  padding: 0.3em 0 .1em 0;
-}
-/* for larger click-area */
-.container dt {
-  margin-top: .8em;
-  margin-bottom: .4em;
-}
-.container ul {
-  margin-left: 1.5em;
-}
-.container ol {
-  margin-left: 2.35em;
-}
-.container ol ol, .container ul ol {
-  margin-left: 2.5em;
-}
-.container form div {
-  margin-bottom: .8em;
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16
+{
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
-/* COLORS 
-
-.container a:link {
-  text-decoration: underline;
-  color: #36c;
-}
-.container a:visited {
-  text-decoration: underline;
-  color: #99c;
-}
-.container a:hover {
-  text-decoration: underline;
-  color: #c33;
-}
-.container a:active, .container a:focus {
-  text-decoration: underline;
-  color: #000;
-}
-.container code, .container pre {
-  color: #c33;
-}
-very optional, but still useful. W3C uses about the same colors for codes */
-
-/* 24 COLUMN GRID */
-.container {
-  width: 960px;
-  margin: 0 auto;
-}
-.showgrid {
-  background: url(../img/grid.png);
-}
-body {
-  margin: 1.5em 0;
-}
-div.grid_1, div.grid_2, div.grid_3, div.grid_4, div.grid_5, div.grid_6, div.grid_7, div.grid_8, div.grid_9, div.grid_10, div.grid_11, div.grid_12, div.grid_13, div.grid_14, div.grid_15, div.grid_16, div.grid_17, div.grid_18, div.grid_19, div.grid_20, div.grid_21, div.grid_22, div.grid_23 {
-  float: left;
-  margin: 0 10px;
-}
-div.grid_24 {
-  float: left;
-}
-div.last {
-  margin-right: 0;
-}
-.grid_1 {
-  width: 30px;
-}
-.grid_2 {
-  width: 70px;
-}
-.grid_3 {
-  width: 110px;
-}
-.grid_4 {
-  width: 150px;
-}
-.grid_5 {
-  width: 190px;
-}
-.grid_6 {
-  width: 230px;
-}
-.grid_7 {
-  width: 270px;
-}
-.grid_8 {
-  width: 310px;
-}
-.grid_9 {
-  width: 350px;
-}
-.grid_10 {
-  width: 390px;
-}
-.grid_11 {
-  width: 430px;
-}
-.grid_12 {
-  width: 470px;
-}
-.grid_13 {
-  width: 510px;
-}
-.grid_14 {
-  width: 550px;
-}
-.grid_15 {
-  width: 590px;
-}
-.grid_16 {
-  width: 630px;
-}
-.grid_17 {
-  width: 670px;
-}
-.grid_18 {
-  width: 710px;
-}
-.grid_19 {
-  width: 750px;
-}
-.grid_20 {
-  width: 790px;
-}
-.grid_21 {
-  width: 830px;
-}
-.grid_22 {
-  width: 870px;
-}
-.grid_23 {
-  width: 910px;
-}
-.grid_24, div.grid_24 {
-  width: 960px;
-}
-.suffix_1 {
-  padding-right: 40px;
-}
-.suffix_2 {
-  padding-right: 80px;
-}
-.suffix_3 {
-  padding-right: 120px;
-}
-.suffix_4 {
-  padding-right: 160px;
-}
-.suffix_5 {
-  padding-right: 200px;
-}
-.suffix_6 {
-  padding-right: 240px;
-}
-.suffix_7 {
-  padding-right: 280px;
-}
-.suffix_8 {
-  padding-right: 320px;
-}
-.suffix_9 {
-  padding-right: 360px;
-}
-.suffix_10 {
-  padding-right: 400px;
-}
-.suffix_11 {
-  padding-right: 440px;
-}
-.suffix_12 {
-  padding-right: 480px;
-}
-.suffix_13 {
-  padding-right: 520px;
-}
-.suffix_14 {
-  padding-right: 560px;
-}
-.suffix_15 {
-  padding-right: 600px;
-}
-.suffix_16 {
-  padding-right: 640px;
-}
-.suffix_17 {
-  padding-right: 680px;
-}
-.suffix_18 {
-  padding-right: 720px;
-}
-.suffix_19 {
-  padding-right: 760px;
-}
-.suffix_20 {
-  padding-right: 800px;
-}
-.suffix_21 {
-  padding-right: 840px;
-}
-.suffix_22 {
-  padding-right: 880px;
-}
-.suffix_23 {
-  padding-right: 920px;
-}
-.prefix_1 {
-  padding-left: 40px;
-}
-.prefix_2 {
-  padding-left: 80px;
-}
-.prefix_3 {
-  padding-left: 120px;
-}
-.prefix_4 {
-  padding-left: 160px;
-}
-.prefix_5 {
-  padding-left: 200px;
-}
-.prefix_6 {
-  padding-left: 240px;
-}
-.prefix_7 {
-  padding-left: 280px;
-}
-.prefix_8 {
-  padding-left: 320px;
-}
-.prefix_9 {
-  padding-left: 360px;
-}
-.prefix_10 {
-  padding-left: 400px;
-}
-.prefix_11 {
-  padding-left: 440px;
-}
-.prefix_12 {
-  padding-left: 480px;
-}
-.prefix_13 {
-  padding-left: 520px;
-}
-.prefix_14 {
-  padding-left: 560px;
-}
-.prefix_15 {
-  padding-left: 600px;
-}
-.prefix_16 {
-  padding-left: 640px;
-}
-.prefix_17 {
-  padding-left: 680px;
-}
-.prefix_18 {
-  padding-left: 720px;
-}
-.prefix_19 {
-  padding-left: 760px;
-}
-.prefix_20 {
-  padding-left: 800px;
-}
-.prefix_21 {
-  padding-left: 840px;
-}
-.prefix_22 {
-  padding-left: 880px;
-}
-.prefix_23 {
-  padding-left: 920px;
-}
-div.border {
-  padding-right: 4px;
-  margin-right: 5px;
-  border-right: 1px solid #eee;
-}
-div.colborder {
-  padding-right: 24px;
-  margin-right: 25px;
-  border-right: 1px solid #eee;
-}
-.pull_1 {
-  margin-left: -40px;
-}
-.pull_2 {
-  margin-left: -80px;
-}
-.pull_3 {
-  margin-left: -120px;
-}
-.pull_4 {
-  margin-left: -160px;
-}
-.pull_5 {
-  margin-left: -200px;
-}
-.pull_6 {
-  margin-left: -240px;
-}
-.pull_7 {
-  margin-left: -280px;
-}
-.pull_8 {
-  margin-left: -320px;
-}
-.pull_9 {
-  margin-left: -360px;
-}
-.pull_10 {
-  margin-left: -400px;
-}
-.pull_11 {
-  margin-left: -440px;
-}
-.pull_12 {
-  margin-left: -480px;
-}
-.pull_13 {
-  margin-left: -520px;
-}
-.pull_14 {
-  margin-left: -560px;
-}
-.pull_15 {
-  margin-left: -600px;
-}
-.pull_16 {
-  margin-left: -640px;
-}
-.pull_17 {
-  margin-left: -680px;
-}
-.pull_18 {
-  margin-left: -720px;
-}
-.pull_19 {
-  margin-left: -760px;
-}
-.pull_20 {
-  margin-left: -800px;
-}
-.pull_21 {
-  margin-left: -840px;
-}
-.pull_22 {
-  margin-left: -880px;
-}
-.pull_23 {
-  margin-left: -920px;
-}
-.pull_24 {
-  margin-left: -960px;
-}
-.pull_1, .pull_2, .pull_3, .pull_4, .pull_5, .pull_6, .pull_7, .pull_8, .pull_9, .pull_10, .pull_11, .pull_12, .pull_13, .pull_14, .pull_15, .pull_16, .pull_17, .pull_18, .pull_19, .pull_20, .pull_21, .pull_22, .pull_23, .pull_24 {
-  float: left;
-  position: relative;
-}
-.push_1 {
-  margin: 0 -40px 1.5em 40px;
-}
-.push_2 {
-  margin: 0 -80px 1.5em 80px;
-}
-.push_3 {
-  margin: 0 -120px 1.5em 120px;
-}
-.push_4 {
-  margin: 0 -160px 1.5em 160px;
-}
-.push_5 {
-  margin: 0 -200px 1.5em 200px;
-}
-.push_6 {
-  margin: 0 -240px 1.5em 240px;
-}
-.push_7 {
-  margin: 0 -280px 1.5em 280px;
-}
-.push_8 {
-  margin: 0 -320px 1.5em 320px;
-}
-.push_9 {
-  margin: 0 -360px 1.5em 360px;
-}
-.push_10 {
-  margin: 0 -400px 1.5em 400px;
-}
-.push_11 {
-  margin: 0 -440px 1.5em 440px;
-}
-.push_12 {
-  margin: 0 -480px 1.5em 480px;
-}
-.push_13 {
-  margin: 0 -520px 1.5em 520px;
-}
-.push_14 {
-  margin: 0 -560px 1.5em 560px;
-}
-.push_15 {
-  margin: 0 -600px 1.5em 600px;
-}
-.push_16 {
-  margin: 0 -640px 1.5em 640px;
-}
-.push_17 {
-  margin: 0 -680px 1.5em 680px;
-}
-.push_18 {
-  margin: 0 -720px 1.5em 720px;
-}
-.push_19 {
-  margin: 0 -760px 1.5em 760px;
-}
-.push_20 {
-  margin: 0 -800px 1.5em 800px;
-}
-.push_21 {
-  margin: 0 -840px 1.5em 840px;
-}
-.push_22 {
-  margin: 0 -880px 1.5em 880px;
-}
-.push_23 {
-  margin: 0 -920px 1.5em 920px;
-}
-.push_24 {
-  margin: 0 -960px 1.5em 960px;
-}
-.push_1, .push_2, .push_3, .push_4, .push_5, .push_6, .push_7, .push_8, .push_9, .push_10, .push_11, .push_12, .push_13, .push_14, .push_15, .push_16, .push_17, .push_18, .push_19, .push_20, .push_21, .push_22, .push_23, .push_24 {
-  float: right;
-  position: relative;
-}
-hr {
-  background: #ddd;
-  color: #ddd;
-  clear: both;
-  float: none;
-  width: 100%;
-  height: .1em;
-  margin: 0 0 1.45em;
-  border: none;
-}
-hr.space {
-  background: #fff;
-  color: #fff;
-}
-.clearfix:after, .container:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-.clearfix, .container {
-  display: inline-block;
-}
-* html .clearfix, * html .container {
-  height: 1%;
-}
-.clearfix, .container {
-  display: block;
-}
-.clear {
-  clear: both;
+.container_12 .grid_3,
+.container_16 .grid_4
+{
+	width: 220px;
 }
 
+.container_12 .grid_6,
+.container_16 .grid_8
+{
+	width: 460px;
+}
+
+.container_12 .grid_9,
+.container_16 .grid_12
+{
+	width: 700px;
+}
+
+.container_12 .grid_12,
+.container_16 .grid_16
+{
+	width: 940px;
+}
+
+/* =Grid >> Children (Alpha ~ First, Omega ~ Last)
+--------------------------------------------------------------------------------*/
+
+.alpha
+{
+	margin-left: 0;
+}
+
+.omega
+{
+	margin-right: 0;
+}
+
+/* =Grid >> 12 Columns
+--------------------------------------------------------------------------------*/
+
+.container_12 .grid_1
+{
+	width: 60px;
+}
+
+.container_12 .grid_2
+{
+	width: 140px;
+}
+
+.container_12 .grid_4
+{
+	width: 300px;
+}
+
+.container_12 .grid_5
+{
+	width: 380px;
+}
+
+.container_12 .grid_7
+{
+	width: 540px;
+}
+
+.container_12 .grid_8
+{
+	width: 620px;
+}
+
+.container_12 .grid_10
+{
+	width: 780px;
+}
+
+.container_12 .grid_11
+{
+	width: 860px;
+}
+
+/* =Grid >> 16 Columns
+--------------------------------------------------------------------------------*/
+
+.container_16 .grid_1
+{
+	width: 40px;
+}
+
+.container_16 .grid_2
+{
+	width: 100px;
+}
+
+.container_16 .grid_3
+{
+	width: 160px;
+}
+
+.container_16 .grid_5
+{
+	width: 280px;
+}
+
+.container_16 .grid_6
+{
+	width: 340px;
+}
+
+.container_16 .grid_7
+{
+	width: 400px;
+}
+
+.container_16 .grid_9
+{
+	width: 520px;
+}
+
+.container_16 .grid_10
+{
+	width: 580px;
+}
+
+.container_16 .grid_11
+{
+	width: 640px;
+}
+
+.container_16 .grid_13
+{
+	width: 760px;
+}
+
+.container_16 .grid_14
+{
+	width: 820px;
+}
+
+.container_16 .grid_15
+{
+	width: 880px;
+}
+
+/* =Prefix Extra Space >> Global
+--------------------------------------------------------------------------------*/
+
+.container_12 .prefix_3,
+.container_16 .prefix_4
+{
+	padding-left: 240px;
+}
+
+.container_12 .prefix_6,
+.container_16 .prefix_8
+{
+	padding-left: 480px;
+}
+
+.container_12 .prefix_9,
+.container_16 .prefix_12
+{
+	padding-left: 720px;
+}
+
+/* =Prefix Extra Space >> 12 Columns
+--------------------------------------------------------------------------------*/
+
+.container_12 .prefix_1
+{
+	padding-left: 80px;
+}
+
+.container_12 .prefix_2
+{
+	padding-left: 160px;
+}
+
+.container_12 .prefix_4
+{
+	padding-left: 320px;
+}
+
+.container_12 .prefix_5
+{
+	padding-left: 400px;
+}
+
+.container_12 .prefix_7
+{
+	padding-left: 560px;
+}
+
+.container_12 .prefix_8
+{
+	padding-left: 640px;
+}
+
+.container_12 .prefix_10
+{
+	padding-left: 800px;
+}
+
+.container_12 .prefix_11
+{
+	padding-left: 880px;
+}
+
+/* =Prefix Extra Space >> 16 Columns
+--------------------------------------------------------------------------------*/
+
+.container_16 .prefix_1
+{
+	padding-left: 60px;
+}
+
+.container_16 .prefix_2
+{
+	padding-left: 120px;
+}
+
+.container_16 .prefix_3
+{
+	padding-left: 180px;
+}
+
+.container_16 .prefix_5
+{
+	padding-left: 300px;
+}
+
+.container_16 .prefix_6
+{
+	padding-left: 360px;
+}
+
+.container_16 .prefix_7
+{
+	padding-left: 420px;
+}
+
+.container_16 .prefix_9
+{
+	padding-left: 540px;
+}
+
+.container_16 .prefix_10
+{
+	padding-left: 600px;
+}
+
+.container_16 .prefix_11
+{
+	padding-left: 660px;
+}
+
+.container_16 .prefix_13
+{
+	padding-left: 780px;
+}
+
+.container_16 .prefix_14
+{
+	padding-left: 840px;
+}
+
+.container_16 .prefix_15
+{
+	padding-left: 900px;
+}
+
+/* =Suffix Extra Space >> Global
+--------------------------------------------------------------------------------*/
+
+.container_12 .suffix_3,
+.container_16 .suffix_4
+{
+	padding-right: 240px;
+}
+
+.container_12 .suffix_6,
+.container_16 .suffix_8
+{
+	padding-right: 480px;
+}
+
+.container_12 .suffix_9,
+.container_16 .suffix_12
+{
+	padding-right: 720px;
+}
+
+/* =Suffix Extra Space >> 12 Columns
+--------------------------------------------------------------------------------*/
+
+.container_12 .suffix_1
+{
+	padding-right: 80px;
+}
+
+.container_12 .suffix_2
+{
+	padding-right: 160px;
+}
+
+.container_12 .suffix_4
+{
+	padding-right: 320px;
+}
+
+.container_12 .suffix_5
+{
+	padding-right: 400px;
+}
+
+.container_12 .suffix_7
+{
+	padding-right: 560px;
+}
+
+.container_12 .suffix_8
+{
+	padding-right: 640px;
+}
+
+.container_12 .suffix_10
+{
+	padding-right: 800px;
+}
+
+.container_12 .suffix_11
+{
+	padding-right: 880px;
+}
+
+/* =Suffix Extra Space >> 16 Columns
+--------------------------------------------------------------------------------*/
+
+.container_16 .suffix_1
+{
+	padding-right: 60px;
+}
+
+.container_16 .suffix_2
+{
+	padding-right: 120px;
+}
+
+.container_16 .suffix_3
+{
+	padding-right: 180px;
+}
+
+.container_16 .suffix_5
+{
+	padding-right: 300px;
+}
+
+.container_16 .suffix_6
+{
+	padding-right: 360px;
+}
+
+.container_16 .suffix_7
+{
+	padding-right: 420px;
+}
+
+.container_16 .suffix_9
+{
+	padding-right: 540px;
+}
+
+.container_16 .suffix_10
+{
+	padding-right: 600px;
+}
+
+.container_16 .suffix_11
+{
+	padding-right: 660px;
+}
+
+.container_16 .suffix_13
+{
+	padding-right: 780px;
+}
+
+.container_16 .suffix_14
+{
+	padding-right: 840px;
+}
+
+.container_16 .suffix_15
+{
+	padding-right: 900px;
+}
+
+/* =Clear Floated Elements
+--------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear
+{
+	background: none;
+	border: 0;
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://www.positioniseverything.net/easyclearing.html */
+
+.clearfix:after
+{
+	clear: both;
+	content: '.';
+	display: block;
+	visibility: hidden;
+	height: 0;
+}
+
+.clearfix
+{
+	display: inline-block;
+}
+
+* html .clearfix
+{
+	height: 1%;
+}
+
+.clearfix
+{
+	display: block;
+}
