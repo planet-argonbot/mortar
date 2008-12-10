@@ -197,6 +197,7 @@ body ul.horizontal li.first {
 =nav > dividers
 ------------------------------------------------------------------------*/
 ul.horizontal.dividers {
+  line-height: 1.2em;
   margin-bottom: 18px;
 }
 
@@ -212,10 +213,25 @@ ul.horizontal.dividers li.first {
   padding-left: 0;
 }
 
-/* space without divider */
+/* inline space without divider */
 
 ul.horizontal.dividers li.space {
   border-left: none;
+  margin-left: 0;
+}
+
+/*------------------------------------------------------------------------
+=nav > space
+------------------------------------------------------------------------*/
+ul.horizontal.space {
+  margin-bottom: 18px;
+}
+
+ul.horizontal.space li {
+  margin-left: .8em;
+}
+
+ul.horizontal.space li.first {
   margin-left: 0;
 }
 
