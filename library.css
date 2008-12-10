@@ -471,60 +471,6 @@ tr.hover {
   padding: 0 2px;
 }
 
-/* Use this class if a link gets an icon when it shouldn't. */
-body a.noicon {
-  background: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Make sure the icons are not cut */
-/*a[href^="http:"], a[href^="mailto:"], a[href^="http:"]:visited,
-a[href$=".pdf"], a[href$=".doc"], a[href$=".xls"], a[href$=".rss"],
-a[href$=".rdf"], a[href^="aim:"] {
-  padding: 2px 22px 2px 0;
-  margin: -2px 0;
-  background-repeat: no-repeat;
-  background-position: right center;
-}*/
-
-/* External links */
-/*a[href^="http:"] {
-  background_image: url(../img/icons/external.png);
-  padding-right: 14px;
-}
-a[href^="mailto:"] {
-  background_image: url(../img/icons/email.png);
-}
-a[href^="http:"]:visited {
-  background_image: url(../img/icons/visited.png);
-}*/
-
-/* Files */
-/*a[href$=".pdf"] {
-  background_image: url(../img/icons/pdf.png);
-}
-a[href$=".doc"] {
-  background_image: url(../img/icons/doc.png);
-}
-a[href$=".xls"] {
-  background_image: url(../img/icons/xls.png);
-}*/
-
-/* Misc */
-/*a[href$=".rss"],
-a[href$=".rdf"] {
-  background_image: url(../img/icons/feed.png);
-}
-a[href^="aim:"] {
-  background_image: url(../img/icons/im.png);
-}
-a[href^="http://yourwebsite.com"] {
-  background: none;
-  padding: 0;
-  margin: 0;
-}*/
-
 /* TEXT CLASSES */
 
 .container .small {
@@ -588,7 +534,7 @@ a[href^="http://yourwebsite.com"] {
   border:1px solid #dedede;
   border_top: 1px solid #eee;
   border_left: 1px solid #eee;
-  background_color: #f5f5f5;
+  background-color: #f5f5f5;
   font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
   font-size: 100%;
   line-height: 130%;
@@ -622,7 +568,7 @@ a[href^="http://yourwebsite.com"] {
 
 /* Standard Buttons */
 button:hover, a.button:hover {
-  background_color: #dff4ff;
+  background-color: #dff4ff;
   border: 1px solid #c2e1ef;
   color: #336699;
 }
@@ -657,7 +603,7 @@ a.negative:hover, button.negative:hover {
   color: #d12f19;
 }
 a.negative:active, button.negative:active {
-  background_color: #d12f19;
+  background-color: #d12f19;
   border: 1px solid #d12f19;
   color: #fff;
 }
