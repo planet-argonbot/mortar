@@ -147,9 +147,9 @@ fieldset {
 }
 
 .half {/* half of the normal bottom margin */
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .double {/* double bottom margin */
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
