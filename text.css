@@ -54,18 +54,6 @@ h6 {
 /* =Spacing
 --------------------------------------------------------------------------------*/
 
-ol {
-  list-style: decimal;
-}
-
-ul {
-  list-style: square;
-}
-
-li {
-  margin-left: 30px;
-}
-
 p,
 dl,
 hr,
