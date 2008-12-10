@@ -6,6 +6,52 @@ This stylesheet contains interface patterns which are consistent through most we
 
 */
 
+
+/*----------------------------------------------------------------------------------
+=flash messages
+----------------------------------------------------------------------------------*/
+.container .error, 
+.container .notice, 
+.container .message {
+  padding: .8em;
+  margin-bottom: 1.6em;
+  border: 2px solid #ddd;
+}
+.container .error {
+  background: #fbe3e4;
+  color: #8a1f11;
+  border-color: #fbc2c4;
+}
+.container .notice {
+  background: #fff6bf;
+  color: #514721;
+  border-color: #ffd324;
+}
+.container .message {
+  background: #e6efc2;
+  color: #264409;
+  border-color: #c6d880;
+}
+.container .error a {
+  color: #8a1f11;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+.container .notice a {
+  color: #514721;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+.container .message a {
+  color: #264409;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+
 /*------------------------------------------------------------------------
 =horizontal list (basis of most navigation schemes)
 ------------------------------------------------------------------------*/
