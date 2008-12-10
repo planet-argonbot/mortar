@@ -50,6 +50,6 @@ tr {page-break-inside: avoid;}
 #header, #footer, #navigation, #rightSideBar, #leftSideBar 
 {display:none;}
 
-.container a.button, .container button {
+ a.button, button {
   display:none;
 }
