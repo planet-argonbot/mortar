@@ -102,11 +102,32 @@
 	margin-right: 0;
 }
 
+/* =Grid >> Block >> 15px Margin
+--------------------------------------------------------------------------------*/
+
+.block_15 {
+  margin: 15px;
+}
+
+/* flush left */
+
+.alpha_15 {
+	margin-left: 0;
+	margin-right: 30px;
+}
+
+/* flush right */
+
+.omega_15 {
+  margin-left: 30px;
+	margin-right: 0;
+}
+
 /* =Grid >> Block >> 20px Margin
 --------------------------------------------------------------------------------*/
 
 .block_20 {
-  margin: 10px;
+  margin: 20px;
 }
 
 /* flush left */
