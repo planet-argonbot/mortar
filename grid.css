@@ -81,20 +81,45 @@
 	width: 960px;
 }
 
-/* =Grid >> Block & Positioning
+/* =Grid >> Block >> 10px Margin
 --------------------------------------------------------------------------------*/
 
-.block {
+.block_10 {
   margin: 10px;
 }
 
-.alpha {
+/* flush left */
+
+.alpha_10 {
 	margin-left: 0;
 	margin-right: 20px;
 }
 
-.omega {
+/* flush right */
+
+.omega_10 {
   margin-left: 20px;
+	margin-right: 0;
+}
+
+/* =Grid >> Block >> 20px Margin
+--------------------------------------------------------------------------------*/
+
+.block_20 {
+  margin: 10px;
+}
+
+/* flush left */
+
+.alpha_20 {
+	margin-left: 0;
+	margin-right: 40px;
+}
+
+/* flush right */
+
+.omega_20 {
+  margin-left: 40px;
 	margin-right: 0;
 }
 
