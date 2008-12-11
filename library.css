@@ -111,47 +111,47 @@ a.negative:active, button.negative:active {
 /*----------------------------------------------------------------------------------
 =flash messages (from blueprint framework) / error messages
 ----------------------------------------------------------------------------------*/
-#flash_message .error, 
-#flash_message .notice, 
-#flash_message .message {
+#flash_messages .error, 
+#flash_messages .notice, 
+#flash_messages .message {
   padding: .8em;
   margin-bottom: 1.6em;
   border: 2px solid #ddd;
 }
 
-#flash_message .error {
+#flash_messages .error {
   background: #fbe3e4;
   color: #8a1f11;
   border-color: #fbc2c4;
 }
 
-#flash_message .notice {
+#flash_messages .notice {
   background: #fff6bf;
   color: #514721;
   border-color: #ffd324;
 }
 
-#flash_message .message {
+#flash_messages .message {
   background: #e6efc2;
   color: #264409;
   border-color: #c6d880;
 }
 
-#flash_message .error a {
+#flash_messages .error a {
   color: #8a1f11;
   background: none;
   padding: 0;
   margin: 0;
 }
 
-#flash_message .notice a {
+#flash_messages .notice a {
   color: #514721;
   background: none;
   padding: 0;
   margin: 0;
 }
 
-#flash_message .message a {
+#flash_messages .message a {
   color: #264409;
   background: none;
   padding: 0;
@@ -197,6 +197,7 @@ body ul.horizontal li.first {
 =nav > dividers
 ------------------------------------------------------------------------*/
 ul.horizontal.dividers {
+  line-height: 1.2em;
   margin-bottom: 18px;
 }
 
@@ -212,10 +213,25 @@ ul.horizontal.dividers li.first {
   padding-left: 0;
 }
 
-/* space without divider */
+/* inline space without divider */
 
 ul.horizontal.dividers li.space {
   border-left: none;
+  margin-left: 0;
+}
+
+/*------------------------------------------------------------------------
+=nav > space
+------------------------------------------------------------------------*/
+ul.horizontal.space {
+  margin-bottom: 18px;
+}
+
+ul.horizontal.space li {
+  margin-left: .8em;
+}
+
+ul.horizontal.space li.first {
   margin-left: 0;
 }
 
