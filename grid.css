@@ -91,7 +91,8 @@
 .gutter_10 .grid_22,
 .gutter_10 .grid_23,
 .gutter_10 .grid_24 {
-  margin: 0 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .gutter_15 .grid_1,
@@ -118,7 +119,8 @@
 .gutter_15 .grid_22,
 .gutter_15 .grid_23,
 .gutter_15 .grid_24 {
-  margin: 0 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .gutter_20 .grid_1,
@@ -146,18 +148,6 @@
 .gutter_20 .grid_23,
 .gutter_20 .grid_24 {
   margin: 0 20px;
-}
-
-
-/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
-----------------------------------------------------------------------------------------------------*/
-
-.alpha {
-	margin-left: 0;
-}
-
-.omega {
-	margin-right: 0;
 }
 
 /* `Grid >> 24 Columns
@@ -554,4 +544,16 @@
 
 .gutter_20 .grid_24 {
 	width: 920px;
+}
+
+
+/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
 }
