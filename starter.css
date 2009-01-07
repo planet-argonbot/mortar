@@ -79,16 +79,27 @@ small {
 }
 
 /*----------------------------------------------------------------------------------
-=utility classes
+=clear fix
 ----------------------------------------------------------------------------------*/
 
-/* =self-clear floats */
-.group:after {
-	content: "."; 
-  display: block; 
-  height: 0; 
-  clear: both; 
-  visibility: hidden;
+.clear:after {
+	clear: both;
+	content: '.';
+	display: block;
+	visibility: hidden;
+	height: 0;
+}
+
+.clear {
+	display: inline-block;
+}
+
+* html .clear {
+	height: 1%;
+}
+
+.clear {
+	display: block;
 }
 
 

@@ -539,27 +539,3 @@
 .omega {
 	margin-right: 0 !important;
 }
-
-/*----------------------------------------------------------------------------------
-=clear fix
-----------------------------------------------------------------------------------*/
-
-.clear:after {
-	clear: both;
-	content: '.';
-	display: block;
-	visibility: hidden;
-	height: 0;
-}
-
-.clear {
-	display: inline-block;
-}
-
-* html .clear {
-	height: 1%;
-}
-
-.clear {
-	display: block;
-}
