@@ -8,8 +8,8 @@ Licensed under GPL and MIT.
 /* =Basic HTML
 --------------------------------------------------------------------------------*/
 
-body {
-  font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+html {
+  font: 62.5%/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;  
 }
 
 a:focus {
@@ -28,27 +28,27 @@ hr {
 --------------------------------------------------------------------------------*/
 
 h1 {
-  font-size: 25px;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: 23px;
+  font-size: 2.3em;
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 2.1em;
 }
 
 h4 {
-  font-size: 19px;
+  font-size: 1.9em;
 }
 
 h5 {
-  font-size: 17px;
+  font-size: 1.7em;
 }
 
 h6 {
-  font-size: 15px;
+  font-size: 1.5em;
 }
 
 /* =Spacing
@@ -89,7 +89,6 @@ fieldset {
   font-variant: small-caps;
   letter-spacing: 1px;
   text-transform: lowercase;
-  font-size: 1.2em;
   font-weight: bold;
   padding: 0 2px;
 }
@@ -147,9 +146,9 @@ fieldset {
 }
 
 .half {/* half of the normal bottom margin */
-  margin-bottom: 10px;
+  margin-bottom: .5em;
 }
 
 .double {/* double bottom margin */
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 }
