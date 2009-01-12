@@ -12,9 +12,15 @@
 .gutter_10,
 .gutter_15,
 .gutter_20 {
-	margin-left: auto;
-	margin-right: auto;
-	width: 960px;
+	margin: 0 auto;
+}
+
+.wrapper,
+.gutter_10,
+.gutter_15,
+.gutter_20 {
+  padding: 0 10px;
+	width: 940px;
 }
 
 
@@ -73,7 +79,6 @@
 .gutter_10 .grid_22,
 .gutter_10 .grid_23,
 .gutter_10 .grid_24 {
-  margin-left: 10px;
   margin-right: 10px;
 }
 
@@ -101,7 +106,6 @@
 .gutter_15 .grid_22,
 .gutter_15 .grid_23,
 .gutter_15 .grid_24 {
-  margin-left: 15px;
   margin-right: 15px;
 }
 
@@ -129,7 +133,7 @@
 .gutter_20 .grid_22,
 .gutter_20 .grid_23,
 .gutter_20 .grid_24 {
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 /* `Grid >> 24 Columns
@@ -437,105 +441,113 @@
 }*/
 
 .gutter_20 .grid_2 {
-	width: 40px;
+	width: 20px;
 }
 
 .gutter_20 .grid_3 {
-	width: 80px;
+	width: 100px;
 }
 
 .gutter_20 .grid_4 {
-	width: 120px;
+	width: 140px;
 }
 
 .gutter_20 .grid_5 {
-	width: 160px;
+	width: 180px;
 }
 
 .gutter_20 .grid_6 {
-	width: 200px;
+	width: 220px;
 }
 
 .gutter_20 .grid_7 {
-	width: 240px;
+	width: 260px;
 }
 
 .gutter_20 .grid_8 {
-	width: 280px;
+	width: 300px;
 }
 
 .gutter_20 .grid_9 {
-	width: 320px;
+	width: 340px;
 }
 
 .gutter_20 .grid_10 {
-	width: 360px;
+	width: 380px;
 }
 
 .gutter_20 .grid_11 {
-	width: 400px;
+	width: 420px;
 }
 
 .gutter_20 .grid_12 {
-	width: 440px;
+	width: 460px;
 }
 
 .gutter_20 .grid_13 {
-	width: 480px;
+	width: 500px;
 }
 
 .gutter_20 .grid_14 {
-	width: 520px;
+	width: 540px;
 }
 
 .gutter_20 .grid_15 {
-	width: 560px;
+	width: 580px;
 }
 
 .gutter_20 .grid_16 {
-	width: 600px;
+	width: 620px;
 }
 
 .gutter_20 .grid_17 {
-	width: 640px;
+	width: 660px;
 }
 
 .gutter_20 .grid_18 {
-	width: 680px;
+	width: 700px;
 }
 
 .gutter_20 .grid_19 {
-	width: 720px;
+	width: 740px;
 }
 
 .gutter_20 .grid_20 {
-	width: 760px;
+	width: 780px;
 }
 
 .gutter_20 .grid_21 {
-	width: 800px;
+	width: 820px;
 }
 
 .gutter_20 .grid_22 {
-	width: 840px;
+	width: 820px;
 }
 
-.gutter_20 .grid_23 {
-	width: 880px;
-}
+/*.gutter_20 .grid_23 {
+  width: 900px;
+}*/
 
 .gutter_20 .grid_24 {
-	width: 920px;
+	width: 940px;
 }
 
 
 /* `Grid >> Children (Alpha ~ First, Omega ~ Last)
 ----------------------------------------------------------------------------------------------------*/
 
-.alpha {
-	margin-left: 0 !important;
+.gutter_10 .alpha {
+	margin-left: 10px;
 }
 
-.omega {
-	margin-right: 0 !important;
+.gutter_15 .alpha {
+	margin-left: 15px;
 }
+
+.gutter_20 .alpha {
+	margin-left: 20px;
+}
+
+/*.omega {
+  margin-right: 0 !important;
+}*/
