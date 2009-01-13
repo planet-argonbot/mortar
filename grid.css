@@ -543,3 +543,7 @@
 .omega .block {
   margin: 10px 20px 10px 10px;
 }
+
+.grid_24 .block {
+  margin: 10px 20px;
+}
