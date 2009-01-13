@@ -19,7 +19,11 @@
 .gutter_10,
 .gutter_15,
 .gutter_20 {
-  padding: 0 10px;
+  width: 960px;
+}
+
+.gutter_20 {
+  padding: 0 10px; 
 	width: 940px;
 }
 
@@ -79,7 +83,7 @@
 .gutter_10 .grid_22,
 .gutter_10 .grid_23,
 .gutter_10 .grid_24 {
-  margin-right: 10px;
+  margin: 5px;
 }
 
 .gutter_15 .grid_1,
@@ -436,12 +440,12 @@
 /* `Grid >> 20px Gutter
 ----------------------------------------------------------------------------------------------------*/
 
-/*.gutter_20 .grid_1 {
-  width: 10px;
+/*.gutter_10 .grid_1 {
+  width: 20px;
 }*/
 
 .gutter_20 .grid_2 {
-	width: 20px;
+	width: 60px;
 }
 
 .gutter_20 .grid_3 {
@@ -485,43 +489,43 @@
 }
 
 .gutter_20 .grid_13 {
-	width: 500px;
+	width: 480px;
 }
 
 .gutter_20 .grid_14 {
-	width: 540px;
+	width: 520px;
 }
 
 .gutter_20 .grid_15 {
-	width: 580px;
+	width: 560px;
 }
 
 .gutter_20 .grid_16 {
-	width: 620px;
+	width: 600px;
 }
 
 .gutter_20 .grid_17 {
-	width: 660px;
+	width: 640px;
 }
 
 .gutter_20 .grid_18 {
-	width: 700px;
+	width: 680px;
 }
 
 .gutter_20 .grid_19 {
-	width: 740px;
+	width: 720px;
 }
 
 .gutter_20 .grid_20 {
-	width: 780px;
+	width: 760px;
 }
 
 .gutter_20 .grid_21 {
-	width: 820px;
+	width: 800px;
 }
 
 .gutter_20 .grid_22 {
-	width: 820px;
+	width: 840px;
 }
 
 /*.gutter_20 .grid_23 {
@@ -529,25 +533,17 @@
 }*/
 
 .gutter_20 .grid_24 {
-	width: 940px;
+	width: 920px;
 }
 
 
 /* `Grid >> Children (Alpha ~ First, Omega ~ Last)
 ----------------------------------------------------------------------------------------------------*/
 
-.gutter_10 .alpha {
-	margin-left: 10px;
+.alpha {
+	margin-left: 0 !important;
 }
 
-.gutter_15 .alpha {
-	margin-left: 15px;
+.omega {
+	margin-right: 0 !important;
 }
-
-.gutter_20 .alpha {
-	margin-left: 20px;
-}
-
-/*.omega {
-  margin-right: 0 !important;
-}*/
