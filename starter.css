@@ -39,9 +39,9 @@ Last Changed:   isoD (in textmate, "isoD" + TAB will insert current date)
 =2) stylesheet imports
 ##################################################################################*/
 
-@import url('/stylesheets/reset.css'); /* global reset */
-@import url('/stylesheets/grid.css'); /* grid framework */
-@import url('/stylesheets/text.css'); /* typography */
+  @import url('/stylesheets/mortar/reset.css'); /* global reset */
+  @import url('/stylesheets/mortar/grid.css'); /* grid framework */
+  @import url('/stylesheets/mortar/text.css'); /* typography */
 
 
 /*##################################################################################
