@@ -2,26 +2,50 @@
 Project:        Project Name
 Last Changed:   isoD (in textmate, "isoD" + TAB will insert current date)
                 http://planetargon.com
--------------------------------------------------------------------------------------
-TABLE OF CONTENTS
-             
-1) general styles
-2) helper styles
-3) layout structure
-4) view components
-5) overrides
+/*##################################################################################
+  =table of contents
+  ##################################################################################
 
-Colar Palette 
+	1.	colors
+	2.	stylesheet imports
+	  A. global reset
+	  B. grid framework
+	  C. typography
+	3.	general styles
+  4.  helper styles
+  5.  layout structure
+  6.  view components
+  7.  overrides
 
-(example color palette)
+####################################################################################
+=1) colors
+####################################################################################
 
+	(example)
+	Green:			#a5c941			Red:			#ff3700
+	Med Green:		#769926			Med Red:		#e33100
+	Drk Green:		#91ad52			Drk Red:		#872300
+	Blue:			#73cacf			Orange:			#ff6908
+	Med Blue:		#2daebf			Med Orange:		#ff5c00
+	Drk Blue:		#007d9a			Drk Orange:		#d45500
+	Magenta:		#c9025c			Yellow:			#ffb515
+	Med Magenta:	#a9014b			Med Yellow:		#fc9200
+	Drk Magenta:	#630030			Drk Yellow:		#d17200
 
-NOTE: IMPORT STYLESHEETS
 
 */
 
 /*##################################################################################
-=1) general styles
+=2) stylesheet imports
+##################################################################################*/
+
+@import url('/stylesheets/reset.css'); /* global reset */
+@import url('/stylesheets/grid.css'); /* grid framework */
+@import url('/stylesheets/text.css'); /* typography */
+
+
+/*##################################################################################
+=3) general styles
 ##################################################################################*/
 
 /* body styles, links headings, other elements, tags go here. */
@@ -56,12 +80,6 @@ a:hover {
 }
 
 a:active {
-}
-
-/* =link classes
---------------------------------------------------------------*/
-a.destroy {
-  color: #f00;
 }
 
 
@@ -105,7 +123,7 @@ small {
 
 
 /*##################################################################################
-=2) helper styles
+=4) helper styles
 ##################################################################################*/
 
 /* forms, cosistent items with just one class go here */
@@ -172,8 +190,7 @@ textarea {
 }
 
 
-/* =form classes
---------------------------------------------------------------*/
+/* =form classes */
 .form_submit {
   margin: 0;
   padding: 10px;
@@ -182,47 +199,24 @@ textarea {
 }
 
 
-
-
 /*##################################################################################
-=3) layout structure
+=5) layout structure
 ##################################################################################*/
 
 /* skeleton and page furniture goes here */
 
 
-/*----------------------------------------------------------------------------------
-=footer
-----------------------------------------------------------------------------------*/
-
-
 
 /*##################################################################################
-=4) view components
+=6) view components
 ##################################################################################*/
 
 /* view components that are used globally go here */
 
-/*----------------------------------------------------------------------------------
-=typography
-----------------------------------------------------------------------------------*/
-
-/* for page descrption */
-
-p.desc {
-  color: #666;
-}
-
-/* footnote */
-
-p.footnote {
-  color: #666;
-  font-size: 10px;
-}
 
 
 /*##################################################################################
-=5) overrides
+=7) overrides
 ##################################################################################*/
 
 /* Everything that is "one-off" will go here. The goal is using this area as a last resort, any patterns or reusable CSS should not go here */
