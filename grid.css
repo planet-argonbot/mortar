@@ -532,10 +532,14 @@
 /* `Grid >> Children (Alpha ~ First, Omega ~ Last)
 ----------------------------------------------------------------------------------------------------*/
 
-.alpha {
-	margin-left: 0 !important;
+.block {
+  margin: 10px;
 }
 
-.omega {
-	margin-right: 0 !important;
+.alpha .block {
+  margin: 10px 10px 10px 20px;
+}
+
+.omega .block {
+  margin: 20px 20px 10px 10px;
 }
